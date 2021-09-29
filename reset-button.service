@@ -1,0 +1,16 @@
+[Unit]
+Description=Reset Button service
+After=network.target
+
+[Service]
+Type=simple
+StandardOutput=journal
+StandardError=journal
+User=pi
+WorkingDirectory=/home/pi/python-reset-button
+ExecStart=python3 main.py
+Restart=always
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
