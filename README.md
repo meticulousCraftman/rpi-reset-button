@@ -17,3 +17,7 @@ This will do everything for you.
 ```
 sudo journalctl -u reset-button.service -f
 ```
+
+## Modes
+Short Press - Deletes all WiFi credentials, restarts the device. Then wait for the device to host a hotspot.
+Long Press (5 seconds or more) - Disconnects from existing WiFi network, tries to connect to (Qube, 12345678). Host a hotspot using your mobile phone, gateway will automatically connect to it in just a few seconds.
